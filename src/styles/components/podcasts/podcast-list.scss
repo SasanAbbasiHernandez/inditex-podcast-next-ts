@@ -1,0 +1,101 @@
+@use '../../colors.scss' as c;
+
+.podcast-wrapper{
+    width: 90%;
+    margin-left: 5%;
+    height: calc(100vh - 90px);
+
+    display: flex;
+    flex-direction: column;
+
+    .podcast-search{
+        align-self: flex-end;
+        margin: 50px 20px;
+
+        span{
+            margin-right: 30px;
+            padding: 3px 8px;
+            background-color: c.$blue;
+            font-size: 22px;
+            font-weight: bold;
+            color: c.$white;
+            border-radius: 10px;
+        }
+
+        input{
+            width: 400px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid c.$grey;
+            border-radius: 8px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+
+    .podcast-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        overflow-y: auto;
+        white-space: nowrap;
+
+        a{
+            text-decoration: none;
+        }
+    
+        .podcast-item{
+            height: 200px;
+            width: 300px;
+            margin: 70px 25px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid c.$light_grey;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -9px 10px 12px 0px c.$light_grey;
+        
+            .podcast-item-image{
+                margin-top: -80px;
+                border-radius: 200px;
+            }
+    
+            .podcast-item-name{
+                margin: 15px 0px;
+                font-size: 22px;
+                font-weight: bold;
+                max-width: 250px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                color:  c.$black;
+            }
+    
+            .podcast-item-author{
+                font-size: 18px;
+                font-weight: bold;
+                color: c.$grey;
+                max-width: 250px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    
+    .podcast-list::-webkit-scrollbar {
+        width: 0px;
+      }
+      
+    .podcast-list::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    
+    .podcast-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}

@@ -1,0 +1,29 @@
+@use '../../colors.scss' as c;
+
+.episode-page-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+
+    .episode-detail-wrapper{
+        flex-grow: 1;
+        border: 1px solid c.$light_grey;
+        box-shadow: -9px 10px 12px 0px c.$light_grey;
+        display: flex;
+        flex-direction: column;
+
+        .episode-detail-name{
+            font-size: 32px;
+            font-weight: bold;
+            margin: 35px ;
+        }
+
+        .episode-detail-description{
+            font-size: 18px;
+            margin: 0px 35px 0px 35px;
+            font-style: italic;
+        }
+    }   
+}

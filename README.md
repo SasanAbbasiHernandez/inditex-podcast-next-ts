@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Proyecto PODCAST INDITEX con Next.js y TypeScript
 
-## Getting Started
+¡Bienvenido/a!
 
-First, run the development server:
+Este proyecto es una aplicación web desarrollada utilizando Next.js, ya que es la mejor forma de crear una SSR con React.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Descripción:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este proyecto es una prueba técnica que simula la búsqueda de los mejores podcast.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Funcionalidades:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Buscar Podcasts
+Ver detalle de los Podcasts
+Escuchar los Episodios
 
-## Learn More
+- Requisitos:
 
-To learn more about Next.js, take a look at the following resources:
+Para ejecutar este proyecto localmente, necesitarás tener instalado:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Node.js
+Instalación:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-## Deploy on Vercel
+    git clone https://github.com/SasanAbbasiHernandez/inditex-podcast-next-ts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Navega a la carpeta del proyecto e instala las dependencias utilizando npm o yarn:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    npm install
+
+- Uso:
+
+Modo Desarrollo:
+
+Una vez que hayas instalado todas las dependencias, puedes ejecutar el proyecto localmente utilizando el siguiente comando:
+
+    npm run dev
+
+Esto iniciará el servidor de desarrollo de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
+
+Modo Simulación Producción:
+
+    npm run build
+    npm run start
+
+Esto iniciará el servidor de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
+
+- Información RELEVANTE:
+
+Estructura del proyecto: dividido en diferentes carpetas con la finalidad de que el proyecto sea escalable.
+
+Estilos: Se utiliza Sass para los estilos globales en la carpeta src/styles la cual tiene los colores y el responsive parametrizados para que los scss de las vistas y componentes puedan reutilizarlos.
+
+Interfaces: conjunto de interfaces para la correcta utilización de TypeScript.
+
+Hooks: (UseData) es un hook que nos ayuda a la recolección de datos del Contexto de manera más simple.
+
+Context: Elegí utilizar Context ya que era una app pequeña.
+
+Components: Conjunto de componentes para cada una de las vistas y header.
+
+App: contiene la raíz de la aplicación que muestra a través de los layouts el header y cada una de las vistas.
+
+Api: contiene todas las funciones propias de llamada a la API de Podcast.
+
+- Palabras finales:
+
+La verdad es que me he divertido mucho haciendo este proyecto, le he dedicado muchas horas y me gustaría recibir feedback del mismo, sobre todo lo negativo.
+
+Un saludo,
+Sasan.

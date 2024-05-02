@@ -1,0 +1,38 @@
+@use '../../colors.scss' as c;
+
+.podcast-detail-wrapper{
+    width: 400px;
+    height: 500px;
+    border: 1px solid c.$light_grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+    box-shadow: -9px 10px 12px 0px c.$light_grey;
+    text-decoration: none;
+    color: inherit;
+
+    .podcast-detail-image{
+        margin: 40px 140px;
+        border-radius: 10px;
+    }
+
+    .podcast-detail-line{
+        width: 90%;
+        border: 1px solid c.$light_grey;
+    }
+
+    .podcast-detail-name{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 40px 0px 0px 40px;
+        align-self: flex-start;
+    }   
+
+    .podcast-detail-author{
+        font-size: 18px;
+        font-style: italic;
+        margin: 10px 0px 0px 40px;
+        align-self: flex-start;
+    }
+}

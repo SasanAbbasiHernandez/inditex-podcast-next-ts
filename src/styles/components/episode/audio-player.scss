@@ -1,0 +1,31 @@
+@use '../../colors.scss' as c;
+
+.audio-wrapper{
+    margin: 100px 35px 35px 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$grey;
+    border-radius: 20px;
+
+    button{
+        border: none;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        color: c.$white;
+        margin-right: 20px;
+    }
+
+    .progress-bar{
+        width: 80%;
+    }
+
+    span{
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: c.$white;
+    }
+}

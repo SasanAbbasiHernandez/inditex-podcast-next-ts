@@ -1,0 +1,39 @@
+@use '../colors.scss' as c;
+
+header{
+    height: 80px;
+    padding: 0px 80px;
+    border-bottom: 1px solid c.$light_grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+    }
+    
+    span{
+        font-weight: bold;
+        color: c.$blue;
+        font-size: 28px;
+    }
+
+    .loader {
+        width: 30px;
+        aspect-ratio: 1;
+        --c:no-repeat linear-gradient(#3f88c3 0 0);
+        background: var(--c), var(--c), var(--c);
+        animation: 
+        l18-1 1s infinite,
+        l18-2 1s infinite;
+    }
+    @keyframes l18-1 {
+    0%,100% {background-size:20% 100%}
+    33%,66% {background-size:20% 20%}
+    }
+    @keyframes l18-2 {
+    0%,33%   {background-position: 0    0,50% 50%,100% 100%}
+    66%,100% {background-position: 100% 0,50% 50%,0    100%}
+    }
+}
